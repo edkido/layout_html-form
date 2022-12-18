@@ -13,8 +13,6 @@
   </head>
 
   <body>
-    <h1>HTML Form</h1>
-
     <form
     action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     method="post"
@@ -54,6 +52,7 @@
           name="age"
           min="1"
           max="100"
+          placeholder="12"
           >
         </div>
 
@@ -65,12 +64,12 @@
           id="birth"
           name="date"
           min="1923-01-01"
-          max="2004-12-31"
+          max="2020-12-31"
           >
         </div>
 
         <div class="form-field">
-          <label for="terms">I accept the terms of the agreement</label>
+          <label for="terms">I accept the term of the agreement</label>
 
           <input
           type="checkbox"
@@ -87,7 +86,7 @@
         <legend>Registration</legend>
 
         <div class="form-field">
-          <label for="email">Email:</label>
+          <label for="email">E-mail:</label>
 
           <input
           type="email"
@@ -111,8 +110,7 @@
           required
           >
         </div>
-
-        <div class="form-field">
+        <!-- <div class="form-field">
           <input
           type="checkbox"
           name="remember"
@@ -121,12 +119,12 @@
           checked
           >
           <label for="member">Remember Me</label>
-        </div>
+        </div> -->
       </fieldset>
 
 
       <fieldset class="interestingFacts form-set">
-        <legend>An interesting fact about You?</legend>
+        <legend>An interesting fact about you!</legend>
 
         <div class="form-field">
           Do you love cats?
@@ -171,7 +169,7 @@
         </div>
 
         <div class="form-field">
-          <label for="brand">Which car brand is your favorite?</label>
+          <label for="brand">What are your favorite brand of cars?</label>
 
           <select
           name="car"
@@ -188,7 +186,7 @@
         </div>
 
         <div class="form-field">
-          <label for="rating">How do you rate my work??</label>
+          <label for="rating">How do you rate my work?</label>
 
           <input
           type="range"
@@ -196,13 +194,14 @@
           name="rate"
           min="0"
           max="10"
+          value="0"
           >
         </div>
       </fieldset>
 
 
       <fieldset class="additionalInfo form-set">
-        <legend>Additional information</legend>
+        <legend>Additional info:</legend>
 
         <div class="form-field">
           <label for="comments">Comments:</label>
@@ -210,23 +209,23 @@
           <textarea
           name="feedback"
           id="comments"
-          rows="4"
-          cols="30"
+          rows="2"
+          cols="20"
           placeholder="leave your comments"
           autocomplete="off"
          ></textarea>
         </div>
 
         <div class="form-field">
-          <label for="recommend"> Whould you recommend us?</label>
+          <label for="recommend">Would you recommend us?</label>
 
           <select
           name="recommend"
           id="recommend"
           required
           >
-            <option value="Yes" checked>Yes</option>
-            <option value="No">No</option>
+            <option value="Yes" checked>yes</option>
+            <option value="No">no</option>
           </select>
         </div>
       </fieldset>

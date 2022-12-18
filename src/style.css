@@ -1,4 +1,8 @@
 /* styles go here */
+form > :first-child {
+  margin-top: 0;
+}
+
 .form-field {
   margin: 10px 0;
 }
