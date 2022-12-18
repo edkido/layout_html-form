@@ -1,6 +1,5 @@
 /* styles go here */
-.form-field
-{
+.form-field {
   margin: 10px 0;
 }
 
@@ -8,12 +7,10 @@
   margin: 20px 0;
 }
 
-.form-set > div:first-of-type{
+.form-set > div:first-of-type {
   margin-top: 0;
 }
 
 .form-set > div:last-of-type {
   margin-bottom: 0;
 }
-
-
