@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -9,9 +9,229 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./main.js"></script>
   </head>
+
   <body>
     <h1>HTML Form</h1>
-    <script type="text/javascript" src="./main.js"></script>
+
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post"
+    target="_blank"
+    >
+      <fieldset class="personalInfo form-set">
+        <legend>Personal information</legend>
+
+        <div class="form-field">
+          <label for="surname">Surname:</label>
+
+          <input
+          type="text"
+          id="surname"
+          name="surname"
+          autocomplete="off"
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="name">Name:</label>
+
+          <input
+          type="text"
+          id="name"
+          name="name"
+          autocomplete="off"
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="age">How old are You?</label>
+
+          <input
+          type="number"
+          id="age"
+          name="age"
+          min="1"
+          max="100"
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="birth">Full date of birth:</label>
+
+          <input
+          type="date"
+          id="birth"
+          name="date"
+          min="1923-01-01"
+          max="2004-12-31"
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="terms">I accept the terms of the agreement</label>
+
+          <input
+          type="checkbox"
+          id="terms"
+          name="terms"
+          required
+          checked
+          >
+        </div>
+      </fieldset>
+
+
+      <fieldset class="registaration form-set">
+        <legend>Registration</legend>
+
+        <div class="form-field">
+          <label for="email">Email:</label>
+
+          <input
+          type="email"
+          id="email"
+          placeholder="email@example.com"
+          requird
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="password">Password:</label>
+
+          <input
+          type="password"
+          name="password"
+          id="password"
+          minlength="8"
+          maxlength="16"
+          pattern="\d+"
+          title="Please, use only numbers."
+          required
+          >
+        </div>
+
+        <div class="form-field">
+          <input
+          type="checkbox"
+          name="remember"
+          id="member"
+          value="yes"
+          checked
+          />
+          <label for="member">Remember Me</label>
+        </div>
+      </fieldset>
+
+
+      <fieldset class="interestingFacts form-set">
+        <legend>An interesting fact about You?</legend>
+
+        <div class="form-field">
+          Do you love cats?
+
+          <label class="cat">
+            <input
+            type="radio"
+            name="cats"
+            value="Yes"
+            checked
+            > Yes
+          </label>
+
+          <label class="cat">
+            <input
+            type="radio"
+            name="cats"
+            value="No"
+            > No
+          </label>
+        </div>
+
+        <div class="form-field">
+          <label for="color">What is your favorite color?</label>
+
+          <input
+          type="color"
+          id="color"
+          name="color"
+          value="#F00"
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="sleepy">What time do you go to bed?</label>
+
+          <input
+          type="time"
+          id="sleepy"
+          name="sleepTime"
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="brand">Which car brand is your favorite?</label>
+
+          <select
+          name="car"
+          id="brand"
+          multiple
+          required
+          >
+            <option value="BMW">BMW</option>
+            <option value="Lexus">Lexus</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Audi">Audi</option>
+            <option value="Zaz">Zaz</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="rating">How do you rate my work??</label>
+
+          <input
+          type="range"
+          id="rating"
+          name="rate"
+          min="0"
+          max="10"
+          >
+        </div>
+      </fieldset>
+
+
+      <fieldset class="additionalInfo form-set">
+        <legend>Additional information</legend>
+
+        <div class="form-field">
+          <label for="comments">Comments:</label>
+
+          <textarea
+          name="feedback"
+          id="comments"
+          rows="4"
+          cols="30"
+          placeholder="leave your comments"
+          autocomplete="off"
+         ></textarea>
+        </div>
+
+        <div class="form-field">
+          <label for="recommend"> Whould you recommend us?</label>
+
+          <select
+          name="recommend"
+          id="recommend"
+          required
+          >
+            <option value="Yes" checked>Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
