@@ -18,108 +18,94 @@
       method="post"
       target="_blank"
     >
-      <fieldset class="personalInfo form-set">
+      <fieldset class="form-set">
         <legend>Personal information</legend>
 
-        <div class="form-field">
-          <label for="surname">Surname:</label>
-
+        <label class="form-field">
+          Surname:
           <input
             type="text"
-            id="surname"
             name="surname"
             autocomplete="off"
           >
-        </div>
+        </label>
 
-        <div class="form-field">
-          <label for="name">Name:</label>
-
+        <label class="form-field">
+          Name:
           <input
             type="text"
-            id="name"
             name="name"
             autocomplete="off"
           >
-        </div>
+        </label>
 
-        <div class="form-field">
-          <label for="age">How old are You?</label>
-
+        <label class="form-field">
+          How old are You?
           <input
             type="number"
-            id="age"
             name="age"
             min="1"
             max="100"
-            placeholder="12"
+            value="12"
           >
-        </div>
+        </label>
 
-        <div class="form-field">
-          <label for="birth">Full date of birth:</label>
-
+        <label class="form-field">
+          Full date of birth:
           <input
             type="date"
-            id="birth"
             name="date"
             min="1923-01-01"
             max="2020-12-31"
           >
-        </div>
+        </label>
 
-        <div class="form-field">
-          <label for="terms">I accept the term of the agreement</label>
-
+        <label class="form-field">
+          I accept the term of the agreement
           <input
             type="checkbox"
-            id="terms"
             name="terms"
             required
             checked
           >
-        </div>
+        </label>
       </fieldset>
 
 
-      <fieldset class="registaration form-set">
+      <fieldset class="form-set">
         <legend>Registration</legend>
 
-        <div class="form-field">
-          <label for="email">E-mail:</label>
-
+        <label class="form-field">
+          E-mail:
           <input
             type="email"
-            id="email"
             placeholder="email@example.com"
             required
           >
-        </div>
+        </label>
 
-        <div class="form-field">
-          <label for="password">Password:</label>
-
+        <label class="form-field">
+          Password:
           <input
             type="password"
             name="password"
-            id="password"
             minlength="8"
             maxlength="16"
             pattern="\d+"
             title="Please, use only numbers."
             required
           >
-        </div>
+        </label>
       </fieldset>
 
 
-      <fieldset class="interestingFacts form-set">
+      <fieldset class="form-set">
         <legend>An interesting fact about you!</legend>
 
         <div class="form-field">
           Do you love cats?
 
-          <label class="cat">
+          <label>
             <input
               type="radio"
               name="cats"
@@ -128,7 +114,7 @@
             > Yes
           </label>
 
-          <label class="cat">
+          <label>
             <input
               type="radio"
               name="cats"
@@ -137,33 +123,28 @@
           </label>
         </div>
 
-        <div class="form-field">
-          <label for="color">What is your favorite color?</label>
-
+        <label class="form-field">
+          What is your favorite color?
           <input
             type="color"
-            id="color"
             name="color"
             value="#F00"
           >
-        </div>
+        </label>
 
-        <div class="form-field">
-          <label for="sleepy">What time do you go to bed?</label>
-
+        <label class="form-field">
+          What time do you go to bed?
           <input
             type="time"
-            id="sleepy"
             name="sleepTime"
+            step="1"
           >
-        </div>
+        </label>
 
-        <div class="form-field">
-          <label for="brand">What are your favorite brand of cars?</label>
-
+        <label class="form-field">
+          What are your favorite brand of cars?
           <select
             name="car"
-            id="brand"
             multiple
             required
           >
@@ -171,51 +152,45 @@
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
-        </div>
+        </label>
 
-        <div class="form-field">
-          <label for="rating">How do you rate my work?</label>
-
+        <label class="form-field">
+          How do you rate my work?
           <input
             type="range"
-            id="rating"
             name="rate"
             min="0"
             max="10"
             value="0"
           >
-        </div>
+        </label>
       </fieldset>
 
 
-      <fieldset class="additionalInfo form-set">
+      <fieldset class="form-set">
         <legend>Additional info:</legend>
 
-        <div class="form-field">
-          <label for="comments">Comments:</label>
-
+        <label class="form-field">
+          Comments:
           <textarea
             name="feedback"
-            id="comments"
             rows="2"
             cols="20"
-            placeholder="leave your comments"
+            placeholder="Leave your comments"
             autocomplete="off"
          ></textarea>
-        </div>
+        </label>
 
-        <div class="form-field">
-          <label for="recommend">Would you recommend us?</label>
-
+        <label class="form-field">
+          Would you recommend us?
           <select
             name="recommend"
-            id="recommend"
             required
           >
             <option value="Yes" checked>yes</option>
             <option value="No">no</option>
           </select>
-        </div>
+        </label>
       </fieldset>
 
       <button type="submit">Submit</button>

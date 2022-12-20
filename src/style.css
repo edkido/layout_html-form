@@ -1,20 +1,13 @@
 /* styles go here */
-form > :first-child {
-  margin-top: 0;
-}
-
 .form-field {
-  margin: 10px 0;
+  margin-bottom: 10px;
+  display: block;
 }
 
 .form-set {
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
-.form-set > div:first-of-type {
-  margin-top: 0;
-}
-
-.form-set > div:last-of-type {
+.form-set > :last-child {
   margin-bottom: 0;
 }
